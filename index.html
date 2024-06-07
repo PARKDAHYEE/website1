@@ -1,75 +1,158 @@
 <!DOCTYPE html>
-<html>
-     <head>
-          <style>
-                 body{
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cooking Mama</title>
+    <style>
+          body{
             font-family: "맑은 고딕", "고딕", "굴림";
         }
-               #review{
-                    width: 800px;
-                    margin: 0;
-               }
-               header {
-                    width: 100%;
+        #cooking {
+            width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            width: 100%;
             height: 150px;
             background-color: rgb(242, 130, 149);
-            background-image: url(../images_all/cooking.webp);
+            background-image: url(../images_all/cookingmama.webp);
             background-position: left top;
             background-repeat: no-repeat;
             background-size: contain;
-               }
-               header p {
-                    text-align: center;
+        }
+        header nav {
+            float: right;
+            width: 70%;
+            margin-top: 30px;
+        }
+        nav ul {
+            list-style-type: none;
+        }
+        nav ul li{
+            display: inline;
+            float: right;
+            font-weight: bolder;
+            margin: 30px;
+        }
+        nav ul li a {
             color: white;
-            font-weight: bold;
-            font-size: 35px;
-            margin: 10px;
-               }
-               ul{list-style: none;}
-               label.tit{font-weight: bold; width: 80px; float: left;}
-               fieldset{margin: 15px 10px; background-color: lightgoldenrodyellow}
-             fieldset legend{ font-weight: bold; font-size:18px; color: darkslategrey}
-             ul li{margin-bottom: 10px;}
-             input {
-               text-align: center;
-             }
-             footer {
-               clear: both;
+            text-decoration: none;
+        }
+        section {
+            float: right;
+            width: 570px;
+            padding: 5px;
+        }
+        section article {
+            float: right;
+            width: 95%;
+            height: 280px;
+            margin: 5px;
+            padding: 10px;
+            border: 3px solid pink;
+            text-align: justify;
+            letter-spacing: 1px;
+        }
+        aside {
+            float: left;
+            width: 200px;
+            height: auto;
+            margin-top: 2%;
+            border: 1px solid pink;
+            background-color: lightgoldenrodyellow;
+            text-align: center;
+        }
+        footer {
+            clear: both;
             width: 100%;
             margin-bottom: 0;
             background-color: rgb(242, 130, 149);
-             }
-          </style>
-     </head>
+            color: white;
+            text-align: center;
+        }
+        footer p {
+            padding: 20px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        h1 {
+            text-align: center;}
+        h2 {font-size: 1.5em;}
+        h2{font-size: 1.0em;}
+         section h3{background-color: lightgoldenrodyellow;
+            width: 80px;
+            text-align: center;}
+        p{
+            line-height: 20px;
+            font-size: 15px;
+        }
+        aside a:visited {
+            color: hotpink;
+        }
+        aside a:hover {
+            font-size: 150%;
+        }
+        aside a{
+            text-decoration: none;
+            font-weight: bold;
+        }
+        header a:hover{
+            color: navy;
+        }
+        }
+    </style>
+</head>
 <body>
-     <div id="review">
-          <header>
-               <p> &nbsp; <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;COOKING MAMA의 레시피</p>
-          </header>
-          <form action="#" method="get">
-               <h1>후기남기기</h1>
-               <fieldset>
-                    <legend>닉네임</legend>
-                    <ul>
-                         <li>
-                              <label for="uname"class="tit">닉네임</label>
-                              <input type="text" id="uname" placeholder="닉네임을 입력해주세요." required>
-                         </li>
-                    </ul>
-               </fieldset>
-               <fieldset>
-                    <legend>후기작성</legend>
-                    <ul>
-                         <li>
-                              <label for="memo"class="tit">후기</label>
-                              <textarea cols="40" rows="3" id="memo" placeholder="실제 조리를 해본 뒤 후기를 남겨주세요."></textarea>
-                         </li>
-                    </ul>
-               </fieldset>
-               <input type="submit" value="제출">
-               <input type="reset" value="다시 작성하기"> <br>
-               <footer>&nbsp;</footer>
-
-     </div>
+    <div id="cooking">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="랭킹.html">랭킹</a></li>
+                    <li><a href="난이도별.html">난이도별</a></li>
+                    <li><a href="조리방법별.html">조리방법별</a></li>
+                    <li><a href="음식종류별.html">음식종류별</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1>김치볶음밥 만들기</h1>
+        <section>
+            <article class="c1">
+                <h3>재료</h3>
+                <p>김치 1컵(160g) <br> 소시지 2개(65g)<br> 대파 1/2컵(40g)<br> 식용유 3큰술(20g) <br>진간장 1/2큰술(5g) <br>운고춧가루 1/3큰술(3g) <br>설탕 1/3큰술(3g)<br> 즉석밥 1개<br> 달걀 1개 <br>김가루 적당량<br> 깨소금 적당량</p>
+            </article>
+            <article class="c2">
+                <h3>조리방법</h3>
+                <p>1. 대파는 반으로 갈라 송송 썰고 소시지는 얇게 썰어 준비한다. <br>
+                    2. 김치는 가위를 이용하여 잘게 썰어 준비한다. <br>
+                    3. 팬에 식용유를 두르고 대파, 소시지를 넣어 노릇하게 볶는다. <br>
+                    4. 소시지가 노릇해지면 설탕을 넣어 눌어붙도록 볶아준다. <br>
+                    5. 설탕 향이 올라오면 간장을 넣어 볶는다. <br>
+                    6. 수분이 사라지면 김치를 넣고 약불에서 볶아준다. <br>
+                    7. 양념이 골고루 섞이면 즉석밥을 넣고 국자를 이용하여 풀어준다. <br>
+                    8. 밥알이 다 풀어지면 불에 올려 볶아준다. <br>
+                    9. 프라이팬에 식용유를 두르고 달걀프라이를 한다. <br>
+                    10. 완성 접시에 김치볶음밥, 달걀프라이를 올리고 깨소금과 김 가루를 곁들인다.</p>
+            </article>
+            <article class="c3">
+                <h3>참고사항</h3>
+                <p>소시지 대신 참치나 스팸 등을 넣어도 맛있습니다. <br>치즈를 곁들이면 한층 더 맛있게 드실 수 있습니다.</p>
+            </article>
+        </section>
+        <aside>
+            <h3>참고영상</h3>
+            <img src="../images_all/백종원jpg.jpg" width="200px" height="200px"> <br>
+            <p><a href="https://www.youtube.com/watch?v=eIo2BaE6LxI">백종원의 김치볶음밥</a></p>
+            <hr>
+            <h3>완성본</h3>
+            <img src="../images_all/foodff.webp" width="200px" height="200px"> 
+            <hr>
+            <h3>후기남기기</h3>
+            <img src="../images_all/food1.jpg" width="200px" height="200px"> <br>
+            <p><a href="index.html">후기 공유</a></p>
+        </aside>
+            <footer>
+                <p>※ 화상에 주의하세요!</p>
+            </footer>
+    </div>
 </body>
 </html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <style>
+                 body{
+            font-family: "맑은 고딕", "고딕", "굴림";
+        }
+               #review{
+                    width: 800px;
+                    margin: 0;
+               }
+               header {
+                    width: 100%;
+            height: 150px;
+            background-color: rgb(242, 130, 149);
+            background-image: url(../images_all/cooking.webp);
+            background-position: left top;
+            background-repeat: no-repeat;
+            background-size: contain;
+               }
+               header p {
+                    text-align: center;
+            color: white;
+            font-weight: bold;
+            font-size: 35px;
+            margin: 10px;
+               }
+               ul{list-style: none;}
+               label.tit{font-weight: bold; width: 80px; float: left;}
+               fieldset{margin: 15px 10px; background-color: lightgoldenrodyellow}
+             fieldset legend{ font-weight: bold; font-size:18px; color: darkslategrey}
+             ul li{margin-bottom: 10px;}
+             input {
+               text-align: center;
+             }
+             footer {
+               clear: both;
+            width: 100%;
+            margin-bottom: 0;
+            background-color: rgb(242, 130, 149);
+             }
+          </style>
+     </head>
+<body>
+     <div id="review">
+          <header>
+               <p> &nbsp; <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;COOKING MAMA의 레시피</p>
+          </header>
+          <form action="#" method="get">
+               <h1>후기남기기</h1>
+               <fieldset>
+                    <legend>닉네임</legend>
+                    <ul>
+                         <li>
+                              <label for="uname"class="tit">닉네임</label>
+                              <input type="text" id="uname" placeholder="닉네임을 입력해주세요." required>
+                         </li>
+                    </ul>
+               </fieldset>
+               <fieldset>
+                    <legend>후기작성</legend>
+                    <ul>
+                         <li>
+                              <label for="memo"class="tit">후기</label>
+                              <textarea cols="40" rows="3" id="memo" placeholder="실제 조리를 해본 뒤 후기를 남겨주세요."></textarea>
+                         </li>
+                    </ul>
+               </fieldset>
+               <input type="submit" value="제출">
+               <input type="reset" value="다시 작성하기"> <br>
+               <footer>&nbsp;</footer>
+
+     </div>
+</body>
+</html>
