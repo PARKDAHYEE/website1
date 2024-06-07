@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>음식 종류별</title>
+    <style>
+          body{
+            font-family: "맑은 고딕", "고딕", "굴림";
+        }
+        #type {
+            width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            width: 100%;
+            height: 150px;
+            background-color: rgb(242, 130, 149);
+            background-image: url(../images_all/cooking.webp);
+            background-position: left top;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        header p {
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-size: 35px;
+            margin: 10px;
+        }
+        footer{
+            clear: both;
+            width: 100%;
+            margin-bottom: 0;
+            background-color: rgb(242, 130, 149);
+        }
+        h1 {
+            text-align: center;
+        }
+        section article {
+            float: left;
+            width: 95%;
+            height: auto;
+            margin: 5px;
+            text-align: justify;
+            letter-spacing: 1px;
+        }
+        dt {
+            font-weight: bold;
+            font-size: large;
+        }
+        section a {
+            text-decoration: none;
+            font-weight: bold;
+            color: black
+        }
+        section a:hover{
+            color: red;
+        }
+        dt{background-color: lightgoldenrodyellow; width: 50px;}
+    </style>
+</head>
+<body>
+    <div id="type">
+        <header> 
+            <p> &nbsp; <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;COOKING MAMA의 레시피</p>
+        </header>
+        <section>
+            <h1>음식 종류별 음식 리스트</h1>
+            <dl>
+                <dt>한식</dt>
+                <dd>: <a href="miniproj.html">김치볶음밥</a>, <a href="#">떡볶이</a>, <a href="#">비빔밥</a></dd> <br>
+                <dt>양식</dt>
+                <dd>: <a href="#">파스타</a>, <a href="#">스테이크</a>, <a href="#">피자</a></dd> <br>
+                <dt>일식</dt>
+                <dd>: <a href="#">초밥</a>, <a href="#">라멘</a>, <a href="#">타코야끼</a></dd> <br>
+                <dt>중식</dt>
+                <dd>: <a href="#">마라탕</a>, <a href="#">양꼬치</a>, <a href="#">탕후루</a></dd>
+            </dl>
+        </section>
+        <footer>&nbsp;</footer>
+</body>
+</html>
